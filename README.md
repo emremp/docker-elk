@@ -88,7 +88,7 @@ Refer to the Elastic documentation for a list of built-in users: [Setting Up Use
 Authentication](https://www.elastic.co/guide/en/x-pack/current/setting-up-authentication.html#built-in-users)
 
 By default, the stack exposes the following ports:
-* 5000: Logstash TCP input.
+* 5201: Logstash TCP input.
 * 9200: Elasticsearch HTTP
 * 9300: Elasticsearch TCP transport
 * 5601: Kibana
@@ -102,7 +102,7 @@ Now that the stack is running, you will want to inject some log entries. The shi
 to send content via TCP:
 
 ```console
-$ nc localhost 5000 < /path/to/logfile.log
+$ nc localhost 5201 < /path/to/logfile.log
 ```
 
 ## Initial setup
