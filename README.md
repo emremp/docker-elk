@@ -82,7 +82,7 @@ Give Kibana a few seconds to initialize, then access the Kibana web UI by hittin
 [http://localhost:5601](http://localhost:5601) with a web browser and use the following default credentials to login:
 
 * user: *elastic*
-* password: *changeme*
+* password: *D4524CF76C9B4DFA942EB492810F1CC0*
 
 Refer to the Elastic documentation for a list of built-in users: [Setting Up User
 Authentication](https://www.elastic.co/guide/en/x-pack/current/setting-up-authentication.html#built-in-users)
@@ -128,7 +128,7 @@ Create an index pattern via the Kibana API:
 $ curl -XPOST -D- 'http://localhost:5601/api/saved_objects/index-pattern' \
     -H 'Content-Type: application/json' \
     -H 'kbn-version: 6.3.0' \
-    -u kibana:changeme \
+    -u kibana:D4524CF76C9B4DFA942EB492810F1CC0 \
     -d '{"attributes":{"title":"logstash-*","timeFieldName":"@timestamp"}}'
 ```
 

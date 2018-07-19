@@ -12,7 +12,7 @@ services:
       - "9300:9300"
     environment:
       ES_JAVA_OPTS: "-Xmx256m -Xms256m"
-      ELASTIC_PASSWORD: changeme
+      ELASTIC_PASSWORD: D4524CF76C9B4DFA942EB492810F1CC0
     networks:
       - elk
 
